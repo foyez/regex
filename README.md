@@ -38,6 +38,8 @@ dollar sign $ = end of string
 \S = any NON white space
 
 \n = new line
+
+\w = short hand of [a-zA-Z0-9_]
 ```
 
 ![Regular expression rule 5](./img/regex5.png)
