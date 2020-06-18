@@ -68,6 +68,14 @@ Use the pipe operator | inside of parens () to specify what that group matches
 | = or
 ```
 
+### Reuse Pattern
+
+**/(test)(\s)\1\2\1/ === /test\stest\stest/**
+
+### Use Capture Groups to Search and ReplacePassed
+
+**"Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1')** // Camp Code
+
 ![Regular expression rule 7](./img/regex7.png)
 
 ## 8
