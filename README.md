@@ -87,11 +87,7 @@ To match special characters, escape them with a backslash \
 
 Special characters in JS regex are: ^ $ \ . * + ? ( ) [ ] { } |
 
-So to match an asterisks, you'd use:
-
-\*
-
-Instead of just *
+So to match an asterisks, you'd use: \* instead of just *
 ```
 
 ![Regular expression rule 8](./img/regex8.png)
