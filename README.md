@@ -1,7 +1,7 @@
 # REGEX in JS
 
-`Regular Expression Signs`: **//** or **new RegExp()**
-`Methods`: **match**, **test**, or **replace**
+- `Regular Expression Signs`: **//** or **new RegExp()**
+- `Methods`: **match**, **test**, or **replace**
 
 ## 1
 ![Regular expression rule 1](./img/regex1.png)
