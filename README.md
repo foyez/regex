@@ -57,7 +57,17 @@ dollar sign $ = end of string
 
 ![Regular expression rule 6](./img/regex6.png)
 
-## 7
+### 7 Lazy matching
+
+- a greedy match finds the longest possible part of a string that fits the regex pattern
+- a lazy match, which finds the smallest possible part of the string that satisfies the regex pattern
+
+```
+"<h1>Winter is coming</h1>".match(/<.*>/) // <h1>Winter is coming</h1>
+"<h1>Winter is coming</h1>".match(/<.*?>/) // <h1>
+```
+
+## 8
 ```
 Use parens () to capture in a group
 
@@ -81,7 +91,7 @@ Use the pipe operator | inside of parens () to specify what that group matches
 
 ![Regular expression rule 7](./img/regex7.png)
 
-## 8
+## 9
 ```
 To match special characters, escape them with a backslash \
 
@@ -92,7 +102,7 @@ So to match an asterisks, you'd use: \* instead of just *
 
 ![Regular expression rule 8](./img/regex8.png)
 
-## 9
+## 10
 ```
 To match anything BUT a certain character, use a caret ^ inside of square brackets
 
@@ -103,7 +113,7 @@ It means both "start of string" when it is at the front of a regex, and "not thi
 
 ![Regular expression rule 9](./img/regex9.png)
 
-## 10
+## 11
 Regexs can be used to find and match all sort of things, from urls to filenames
 
 HOWEVER! be careful if you try to use regexs for really complex tasks, such as parsing emails (which get really confusing, really fast), or HTML (which is not a regular language, and so can't be fully parsed by a regular expression)
