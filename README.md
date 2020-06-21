@@ -121,3 +121,7 @@ HOWEVER! be careful if you try to use regexs for really complex tasks, such as p
 There is (of course) much more to regex like lazy vs greedy, lookahead, and capturing
 
 but most of what web developers want to do with regular expressions can use just these base building blocks.
+
+
+**Links:**
+- [Regex Cheat Sheet in Python](https://www.dataquest.io/blog/regex-cheatsheet/)
