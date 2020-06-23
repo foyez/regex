@@ -124,4 +124,5 @@ but most of what web developers want to do with regular expressions can use just
 
 
 **Links:**
+- [Learn Regex](https://github.com/ziishaned/learn-regex)
 - [Regex Cheat Sheet in Python](https://www.dataquest.io/blog/regex-cheatsheet/)
