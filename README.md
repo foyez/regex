@@ -113,7 +113,19 @@ It means both "start of string" when it is at the front of a regex, and "not thi
 
 ![Regular expression rule 9](./img/regex9.png)
 
-## 11
+## 11 Lookahead and Lookbehind
+
+```
+?:  is for non capturing group
+?=  is for positive look ahead
+?!  is for negative look ahead
+?<= is for positive look behind
+?<! is for negative look behind
+```
+
+**Link**: [Lookahead and Lookbehind Zero-Length Assertions](http://www.regular-expressions.info/lookaround.html)
+
+## 12
 Regexs can be used to find and match all sort of things, from urls to filenames
 
 HOWEVER! be careful if you try to use regexs for really complex tasks, such as parsing emails (which get really confusing, really fast), or HTML (which is not a regular language, and so can't be fully parsed by a regular expression)
