@@ -138,6 +138,49 @@ There is (of course) much more to regex like lazy vs greedy, lookahead, and capt
 
 but most of what web developers want to do with regular expressions can use just these base building blocks.
 
+### Examples
+
+- **Email validation:**
+```js
+const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
+const isValidEmail = pattern.test(str)
+```
+
+- **Password validation:**
+```js
+// At least 1 uppercase character.
+// At least 1 lowercase character.
+// At least 1 digit.
+// At least 1 special character.
+// Minimum 6 characters.
+
+const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
+const isValidPassword = pattern.test(str)
+```
+
+- **Phone validation:**
+```js
+ 		const onlyNums = value.replace(/[^\d]/g, '')
+ 		if (onlyNums.length <= 3) {
+ 			return onlyNums
+ 		}
+ 		if (onlyNums.length <= 7) {
+ 			return `${onlyNums.slice(0, 3)}-${onlyNums.slice(3)}`
+ 		}
+ 		return `${onlyNums.slice(0, 3)}-${onlyNums.slice(3, 6)}-${onlyNums.slice(
+ 			6,
+ 			10
+ 		)}`
+```
+
+- **Url validation:**
+```js
+const pattern = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi
+const isValidUrl = pattern.test(str)
+```
+
+
+
 
 **Links:**
 - [Learn Regex](https://github.com/ziishaned/learn-regex)
