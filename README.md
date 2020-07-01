@@ -154,7 +154,7 @@ const isValidEmail = pattern.test(str)
 // At least 1 special character.
 // Minimum 6 characters.
 
-const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
+const pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(\W|_)).{6,}$/
 const isValidPassword = pattern.test(str)
 ```
 
