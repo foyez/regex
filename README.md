@@ -138,6 +138,16 @@ There is (of course) much more to regex like lazy vs greedy, lookahead, and capt
 
 but most of what web developers want to do with regular expressions can use just these base building blocks.
 
+## 13. Variable in regex
+
+```js
+const fruits = ["apple", "pineapple", "banana", "grape"]
+const q = "ap"
+// contains "q" in a string
+const pattern = new RegExp(`\.*${q}\.*`, "i");
+fruits.filter(fruit => pattern.test(fruit)) // ["apple", "pineapple", "grape"]
+```
+
 ### Examples
 
 - **Email validation:**
